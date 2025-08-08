@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PlotTest</string>
+
+    <string name="google_maps_key">AIzaSyBT3WN9cHEGQ_MH8WBigu9hV6oYTQSv21o</string>
+    <string name="add_title">Set name for polygon</string>
+    <string name="add_hint">polygon name</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">cancel</string>
+    <string name="list_of_plots">List of plots</string>
+
+</resources>
