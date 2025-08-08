@@ -39,6 +39,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var customAlertDialog: CustomAlertDialog
     private lateinit var customBottomSheet: CustomBottomSheet
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMapBinding.inflate(layoutInflater)
@@ -71,7 +72,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         customAlertDialog = CustomAlertDialog { name ->
             lifecycleScope.launch {
                 polygon?.let {
-                    viewModel.savePlot(name, it)
+                    viewModel.savePlot(name, it.points)
                     clearMap()
                 }
             }
