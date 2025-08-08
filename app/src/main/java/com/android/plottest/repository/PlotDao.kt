@@ -13,5 +13,4 @@ interface PlotDao {
     @Query("SELECT * FROM plots_table")
     suspend fun getAllPlots(): List<PlotModel>
 
-
 }
